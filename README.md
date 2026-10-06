@@ -1,251 +1,77 @@
-/* ===================================
-   1. Переменные проекта
-   =================================== */
-:root {
-  /* Основные цвета проекта */
-  --color-bg: #ffffff;
-  --color-text: #222222;
-  --color-muted: #666666;
-  --color-primary: #0057b8;
-  --color-primary-dark: #003f86;
-  --color-border: #dddddd;
-  --color-surface: #f7f7f7;
-  --color-surface-accent: #eef5ff;
-  --color-danger: #b00020;
-  --color-success: #168a2f;
-  --color-success-bg: #eefaf0;
-  --color-white: #ffffff;
+# Учебный frontend-проект
 
-  /* Отступы */
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
+## Описание
 
-  /* Скругления */
-  --radius-sm: 6px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+Проект выполняется в рамках дисциплины «Фронтенд и бэкенд разработка».
 
-  /* Размеры */
-  --container-width: 1100px;
-}
+Тема проекта: многостраничный сайт интернет-магазина или каталога услуг.
 
-/* ===================================
-   2. Базовые стили
-   =================================== */
-* {
-  box-sizing: border-box;
-}
+## Структура проекта
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-}
+- `index.html` — главная страница;
+- `css/style.css` — файл стилей;
+- `images/` — папка для изображений;
+- `.gitignore` — список файлов, исключённых из Git;
+- `README.md` — описание проекта.
 
-header,
-main,
-footer {
-  padding: var(--space-lg);
-}
+## Используемые технологии
 
-header {
-  background-color: var(--color-surface);
-}
+- HTML;
+- CSS;
+- Git;
+- GitHub.
 
-footer {
-  background-color: var(--color-surface);
-}
+## Автор
 
-/* ===================================
-   3. Общие элементы интерфейса
-   =================================== */
-a {
-  color: var(--color-primary);
-}
+https://konarevadara30-rgb.github.io/kr1-html-css-shop/
 
-a:hover {
-  color: var(--color-primary-dark);
-}
+ФИО: Конарева Дарья Владимировна 
+Группа: ЭФБО-08-25
+## Текущий статус
+работаю
 
-a:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 3px;
-}
+## Постановка контрольной работы №1
 
-.button {
-  display: inline-block;
-  padding: var(--space-sm) var(--space-md);
-  color: var(--color-white);
-  background-color: var(--color-primary);
-  text-decoration: none;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
+Тема контрольной работы №1: «HTML и CSS: разработка многостраничного сайта».
 
-.button:hover {
-  background-color: var(--color-primary-dark);
-}
+В рамках контрольной работы необходимо разработать многостраничный HTML/CSS-сайт интернет-магазина или каталога услуг.
 
-.button:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 3px;
-}
+Проект должен включать:
 
-.button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+- главную страницу;
+- страницу каталога;
+- страницу карточки товара или услуги;
+- страницу оформления заявки;
+- страницу контактов;
+- семантическую HTML-разметку;
+- внешний CSS-файл;
+- базовую навигацию;
+- оформление основных блоков страницы.
 
-/* ===================================
-   4. Компоненты страницы
-   =================================== */
-.site-header {
-  max-width: var(--container-width);
-  margin: 0 auto;
-}
+## История выполнения
 
-.site-logo {
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--color-text);
-}
+- Практическая работа 1: создан Git-репозиторий, опубликован проект на GitHub Pages.
+- Практическая работа 2: создан HTML-каркас стартовой страницы и выполнено базовое CSS-оформление.
+- Практическая работа 3: добавлена форма заявки, модальное окно и базовая валидация.
+- Практическая работа 4: добавлены CSS-переменные, состояния интерфейса и упорядочена структура стилей.
+Также можно добавить раздел:
 
-.site-nav__list {
-  padding: 0;
-  margin: var(--space-md) 0 0;
-  list-style: none;
-}
+## CSS-архитектура
 
-.site-nav__list li {
-  margin-bottom: var(--space-sm);
-}
+В проекте используются:
 
-.site-nav__list a {
-  text-decoration: none;
-}
+- CSS-переменные в `:root`;
+- единая шкала отступов;
+- переменные для цветов и скруглений;
+- состояния `:hover`, `:focus-visible`, `:disabled`;
+- визуальная подсветка ошибочных полей через `aria-invalid`;
+- структурированный файл `css/style.css`.
 
-.site-nav__list a:hover {
-  text-decoration: underline;
-}
+## Реализованные элементы интерфейса
 
-.hero {
-  max-width: var(--container-width);
-  margin: 0 auto var(--space-xl);
-  padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-surface-accent);
-  border-radius: var(--radius-lg);
-}
-
-.section {
-  max-width: var(--container-width);
-  margin: 0 auto var(--space-xl);
-}
-
-.section h2 {
-  margin-top: 0;
-}
-
-.product-card {
-  margin-bottom: var(--space-md);
-  padding: var(--space-md);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  background-color: var(--color-bg);
-}
-
-.product-card:hover {
-  border-color: var(--color-primary);
-}
-
-.product-card h3 {
-  margin-top: 0;
-}
-
-.aside-info {
-  max-width: var(--container-width);
-  margin: 0 auto var(--space-xl);
-  padding: var(--space-md);
-  border-left: 4px solid var(--color-primary);
-  background-color: var(--color-surface);
-}
-
-/* ===================================
-   5. Форма и модальное окно
-   =================================== */
-.order-dialog {
-  width: min(100% - 32px, 560px);
-  padding: var(--space-lg);
-  border: none;
-  border-radius: var(--radius-lg);
-}
-
-.order-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.form-field {
-  margin-bottom: var(--space-md);
-}
-
-.form-field label {
-  display: block;
-  margin-bottom: var(--space-xs);
-}
-
-.form-field input,
-.form-field select,
-.form-field textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  font: inherit;
-}
-
-.form-field input[type="checkbox"] {
-  width: auto;
-}
-
-.form-field small {
-  display: block;
-  margin-top: var(--space-xs);
-  color: var(--color-muted);
-}
-
-.form-field input:hover,
-.form-field select:hover,
-.form-field textarea:hover {
-  border-color: var(--color-primary);
-}
-
-.form-field input:focus-visible,
-.form-field select:focus-visible,
-.form-field textarea:focus-visible,
-.form-actions button:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 3px;
-}
-
-[aria-invalid="true"] {
-  border-color: var(--color-danger);
-}
-
-.form-actions {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.success-message {
-  max-width: var(--container-width);
-  margin: var(--space-lg) auto;
-  padding: var(--space-md);
-  border-left: 4px solid var(--color-success);
-  background-color: var(--color-success-bg);
-}
+- кнопки заказа в карточках товаров;
+- модальное окно с формой заявки;
+- поля формы: имя, e-mail, телефон, дата, тема, комментарий, согласие;
+- базовая HTML-валидация;
+- базовая JS-обработка формы;
+- сообщение об успешной отправке.
