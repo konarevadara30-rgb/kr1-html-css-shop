@@ -54,8 +54,6 @@ body {
 }
 
 main {
-  padding: var(--space-lg);
-
   /* добавить */
   flex: 1;
 }
