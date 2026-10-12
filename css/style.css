@@ -2,13 +2,13 @@
    1. Переменные проекта
    =================================== */
 :root {
-  --color-bg: #ffffff;
+  --color-bg: #efd2d2;
   --color-text: #222222;
   --color-muted: #666666;
-  --color-primary: #0057b8;
-  --color-primary-dark: #003f86;
-  --color-border: #dddddd;
-  --color-surface: #f7f7f7;
+  --color-primary: #600058;
+  --color-primary-dark: #86007d;
+  --color-border: #db439e;
+  --color-surface: #e34aad;
   --color-surface-accent: #eef5ff;
   --color-danger: #b00020;
   --color-success: #168a2f;
